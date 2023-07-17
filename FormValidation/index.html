@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1 class="title">FORM VALIDATION</h1>
+
+    <form>
+      <div class="context">
+        <label for="firstName">First-Name:</label>
+        <label for="middleName">Middle-Name:</label>
+        <label for="lastName">Last-Name:</label>
+        <label for="department">Department:</label>
+        <label for="username">Username:</label>
+        <label for="pass">Password:</label>
+        <label for="confPass">Confirm Password:</label>
+        <label for="mail">E-mail:</label>
+        <label for="contact">Contact No:</label>
+      </div>
+
+      <div class="inputField">
+        <div class="box firstName">
+          <i class="fa-solid fa-user"></i>
+          <input
+            type="text"
+            placeholder="first name"
+            class="name"
+            id="firstName"
+            required
+          />
+        </div>
+
+        <div class="box middleName">
+          <i class="fa-solid fa-user"></i>
+          <input
+            type="text"
+            placeholder="middle name"
+            class="name"
+            id="middleName"
+            required
+          />
+        </div>
+
+        <div class="box lastName">
+          <i class="fa-solid fa-user"></i>
+          <input
+            type="text"
+            placeholder="last name"
+            class="name"
+            id="lastName"
+            required
+          />
+        </div>
+
+        <div class="box dep">
+          <i class="fa-solid fa-briefcase"></i>
+          <select name="department" id="department">
+            <option value="Android">Android</option>
+            <option value="IOS">IOS</option>
+            <option value="React-native">React-native</option>
+            <option value="Flutter">Flutter</option>
+          </select>
+        </div>
+
+        <div class="box userName">
+          <i class="fa-solid fa-user"></i>
+          <input type="text" name="username" id="username" required />
+        </div>
+
+        <div class="box pass">
+          <i class="fa-solid fa-key"></i>
+          <input type="password" name="pass" id="pass" required minlength="8" />
+        </div>
+
+        <div class="box confPass">
+          <i class="fa-solid fa-key"></i>
+          <input type="password" name="confPass" id="confPass" required />
+        </div>
+
+        <div class="box mail">
+          <i class="fa-solid fa-envelope"></i>
+          <input
+            type="email"
+            name="mail"
+            id="mail"
+            required
+            minlength="10"
+            maxlength="40"
+          />
+        </div>
+
+        <div class="box contact">
+          <i class="fa-solid fa-phone"></i>
+          <input
+            type="tel"
+            placeholder="(+91)"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            name="contact"
+            id="contact"
+            required
+          />
+        </div>
+      </div>
+
+      <button class="btn" type="submit">Submit</button>
+    </form>
+
+    <script
+      src="https://kit.fontawesome.com/4cfaf24934.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

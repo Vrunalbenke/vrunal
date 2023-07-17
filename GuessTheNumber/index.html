@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Number guessing game</h1>
+        <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.
+        </p>
+        <div class="number">
+            <label for="Enter">Enter a guess:</label>
+            <input type="number" min="1" max="100" required id="Enter" class="Enter" >
+            <!-- onfocus="this.value=''" -->
+            <!-- <input type="button" value="Submit guess" class="guessSubmit" /> -->
+            <button class="guessSubmit">Submit guess</button>
+        </div>
+
+        <div class="result">
+            <p class="chances"></p>
+            <p class="perviousClass"></p>
+            <p class="lastGuess"></p>
+            <p class="lowHigh"></p>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
